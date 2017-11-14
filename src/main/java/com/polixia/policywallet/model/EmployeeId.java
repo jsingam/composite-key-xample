@@ -9,7 +9,7 @@ public class EmployeeId implements Serializable {
 
         private String name;
         private String departmentName;
-        private String designation;
+        private String departmentLocation;
     
 
 }

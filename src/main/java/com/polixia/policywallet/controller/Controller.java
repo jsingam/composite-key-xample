@@ -32,7 +32,7 @@ public class Controller {
 
     @RequestMapping("/empolyyes/{id}")
     public Employee getEmployee(){
-        Employee employee= employeeRepository.findByNameAndDepartmentNameAndDesignation("Bhagya","RnD","Architect");
+        Employee employee= employeeRepository.findByNameAndDepartmentNameAndDepartmentLocation("Bhagya","RnD","Kalutara");
         return employee;
     }
 

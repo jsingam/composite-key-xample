@@ -7,5 +7,5 @@ import org.springframework.data.repository.Repository;
 public interface EmployeeRepository extends Repository<Employee,EmployeeId>{
 
 
-    Employee findByNameAndDepartmentNameAndDesignation(String bhagya, String rnD, String architect);
+    Employee findByNameAndDepartmentNameAndDepartmentLocation(String bhagya, String rnD, String location);
 }

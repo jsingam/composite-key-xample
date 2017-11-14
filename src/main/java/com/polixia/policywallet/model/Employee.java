@@ -16,18 +16,17 @@ public class Employee {
     @Id
     @Column(name = "Department")
     private String departmentName;
-    @Id
     @Column(name = "Designation")
     private String designation;
-    @Column(name = "DepartmentLocation")
+    @Id
+    @Column(name = "Location")
     private String departmentLocation;
     @ManyToOne
     @JoinColumns({
             @JoinColumn(name="Department", referencedColumnName="Name",insertable = false,updatable = false),
-            @JoinColumn(name="departmentLocation", referencedColumnName="Location",insertable = false,updatable = false),
+            @JoinColumn(name="Location", referencedColumnName="Location",insertable = false,updatable = false),
     })
-    @JsonIgnore
-    private Department department;
+    private Department department= new Department();
     @Column(name = "Salary")
     private Double salary;
 
